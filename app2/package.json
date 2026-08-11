@@ -1,0 +1,12 @@
+{
+  "name": "app2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.0"
+  }
+}

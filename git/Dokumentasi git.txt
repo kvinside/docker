@@ -1,0 +1,12 @@
+Dokumentasi git
+
+1.git config --global user.name "kvinside"
+2.config --global user.email "mochamadindrabayu97@gmail.com"
+3.lihat user & email = git config --list
+4.Buat project = git init (difolder docker tadi)
+5.memberi tahu Git bahwa folder tersebut aman/trusted = git config --global --add safe.directory /home/hellcat/docker
+6. cek status git = git status 
+7. memastikan Git benar-benar aktif: git rev-parse --is-inside-work-tree
+true
+8.ubah git master ke main
+

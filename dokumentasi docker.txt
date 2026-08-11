@@ -1,0 +1,18 @@
+1.bikin dockerfile
+2.build images : docker build --tag (nama images:version) .
+3.buat container : docker container create --name (nama container) -p (port:port) app-golang:1.0
+4.login  regis : docker login
+5.tag images untuk docker hub : docker tag app-golang:1.0 kvinside/app-golang:1.0
+6.push images ke docker hub : docker push kvinside/app-golang:1.0
+7.bikin docker network : docker network create [nama network]
+8.buat connect container : docker network connect app-network [nama network]
+9 cek network : docker network inspect [nama network]
+10.masuk ke dalam container : docker exec -it [nama container] /bin/bash
+11.tes koneksi dari container lain: curl http://[nama container:port]
+12. keluar container : exit
+
+#start : docker container start [nama container]
+#stop : docker container stop [nama container]
+#list container yg up : docker container ls
+#list container belum jalan : docker container ls -all
+#buat liat isi container : docker container inspect [nama container]
