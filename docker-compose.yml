@@ -1,10 +1,12 @@
 
 services:
   app1:
-    image: kvinside/app-golang:1.0
+    image: kvinside/app-golang:2.1
     container_name: app1
     ports:
       - "9000:9000"
+    environment:
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
     networks:
       - app-network
 
