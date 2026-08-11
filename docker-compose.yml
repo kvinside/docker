@@ -1,7 +1,9 @@
-
 services:
   app1:
-    image: kvinside/app-golang:2.1
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: kvinside/app-golang:2.2
     container_name: app1
     ports:
       - "9000:9000"
