@@ -15,4 +15,4 @@
 #stop : docker container stop [nama container]
 #list container yg up : docker container ls
 #list container belum jalan : docker container ls -all
-#buat liat isi container : docker container inspect [nama container]
+#buat liat isi container : docker container inspect [nama container].
