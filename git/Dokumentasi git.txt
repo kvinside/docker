@@ -10,3 +10,10 @@ Dokumentasi git
 true
 8.ubah git master ke main
 
+push file update di git
+git add .
+git push
+
+
+git commit -m "pesan update"
+

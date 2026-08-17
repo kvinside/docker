@@ -7,6 +7,14 @@ RUN go mod download
 
 COPY main.go .
 
+RUN go build -o app .
+
+FROM debian:trixie-slim
+
+WORKDIR /app
+
+COPY --from=builder /app/app .
+
 EXPOSE 9000
 
-CMD ["go", "run", "main.go"]
+CMD ["./app"]
