@@ -45,7 +45,7 @@ pipeline{
         }
         stage('verify'){
             steps{
-                sh 'docker ps -- filter name=${CONTAINER_NAME}'
+                sh 'docker ps --filter name=${CONTAINER_NAME}'
             }
         }
     }
