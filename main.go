@@ -740,19 +740,6 @@ async function verifyPassword() {
 
 func main() {
 
-	envKey := os.Getenv("ENCRYPTION_KEY")
-
-	if envKey == "" {
-		fmt.Println("ERROR: ENCRYPTION_KEY belum diset")
-		os.Exit(1)
-	}
-
-	if len(envKey) != 32 {
-		fmt.Println("ERROR: ENCRYPTION_KEY harus tepat 32 karakter")
-		os.Exit(1)
-	}
-
-	key = []byte(envKey)
 
 	http.HandleFunc("/", homeHandler)
 
