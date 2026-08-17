@@ -9,7 +9,6 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-	"os"
 
 	"golang.org/x/crypto/bcrypt"
 )
